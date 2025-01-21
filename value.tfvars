@@ -1,0 +1,9 @@
+resource_group_name = "your-resource-group-name" 
+subscription_id = "your-subscription-id"  
+vnet_region = "your-region" 
+transit_vnet_name = "your-vnet-name"   
+transit_vnet_address_space = ["192.168.11.0/24"]
+nva_bgp_asn = "65002"
+vhub_location = "eastus"
+vhub_name = "your-hub-name"  
+vhub_resource_group_name = "your-hub-resource-group"
