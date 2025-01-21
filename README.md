@@ -6,8 +6,8 @@ This setup deploys the following components:
 
 * A Transit VNet with multiple subnets (public, private, service, mgmt)
 * Virtual Hub with BGP connection configuration
-* Virtual Machines connected to each subnet via multiple NICs (Private, Service, Management, and Public)
-* Network Security Groups (NSGs) for securing traffic between different subnets
+* Cat8000v Virtual Machines connected to each subnet via multiple NICs (Private, Service, Management, and Public)
+* Network Security Groups (NSGs) for different subnets
 
 ### High-Level Architecture
 
@@ -49,6 +49,7 @@ This setup deploys the following components:
 
 - Creates a virtual network (`azurerm_virtual_network`) and subnets (`azurerm_subnet`).
 - Configures network security groups (NSGs) and route tables to manage routing and traffic control between the subnets.
+- Provision two Cat8000v NVAs with initial configuration
 
 ### `vhub` Module
 
