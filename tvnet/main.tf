@@ -62,7 +62,7 @@ resource "azurerm_network_security_group" "transport" {
     source_port_range          = "*"
     destination_port_range     = "22"
   #Change this prefix accordingly
-    source_address_prefix      = "71.183.72.182/32"
+    source_address_prefix      = "*"
     destination_address_prefix = "*"
   }
 
@@ -87,7 +87,7 @@ resource "azurerm_network_security_group" "transport" {
     source_port_range          = "*"
     destination_port_range     = "12346-13156"
 #Change this prefix accordingly
-    source_address_prefix      = "71.183.72.182/32"
+    source_address_prefix      = "*"
     destination_address_prefix = "*"
   }
 }
@@ -106,7 +106,7 @@ resource "azurerm_network_security_group" "service" {
     source_port_range          = "*"
     destination_port_range     = "*"
 #Change this prefix accordingly
-    source_address_prefix      = "71.183.72.182/32"
+    source_address_prefix      = "*"
     destination_address_prefix = "*"
   }
 
